@@ -33,94 +33,14 @@ importers:
         specifier: ^5.2.2
         version: 5.3.3
 
-  apps/client:
-    dependencies:
-      common:
-        specifier: workspace:*
-        version: link:../../packages/common
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@types/react':
-        specifier: ^18.2.43
-        version: 18.2.48
-      '@types/react-dom':
-        specifier: ^18.2.17
-        version: 18.2.18
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.14.0
-        version: 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.14.0
-        version: 6.19.1(eslint@8.56.0)(typescript@5.3.3)
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.2.1(vite@5.0.12)
-      eslint:
-        specifier: ^8.55.0
-        version: 8.56.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.56.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.5
-        version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.0.8
-        version: 5.0.12(@types/node@20.11.9)
-
-  apps/server:
-    dependencies:
-      '@trpc/server':
-        specifier: ^10.45.0
-        version: 10.45.0
-      dotenv:
-        specifier: ^16.4.1
-        version: 16.4.1
-      express:
-        specifier: ^4.18.2
-        version: 4.18.2
-      kysely:
-        specifier: ^0.27.2
-        version: 0.27.2
-      superjson:
-        specifier: ^2.2.1
-        version: 2.2.1
-      ts-node-dev:
-        specifier: ^2.0.0
-        version: 2.0.0(@types/node@20.11.9)(typescript@5.3.3)
-      zod:
-        specifier: ^3.22.4
-        version: 3.22.4
-    devDependencies:
-      '@types/express':
-        specifier: ^4.17.21
-        version: 4.17.21
-      '@types/node':
-        specifier: ^20.11.9
-        version: 20.11.9
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.5
-        version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-
-  packages/backend:
+  apps/backend:
     dependencies:
       '@trpc/server':
         specifier: 10.45.0
         version: 10.45.0
       common:
         specifier: workspace:*
-        version: link:../common
+        version: link:../../packages/common
       dotenv:
         specifier: ^16.4.1
         version: 16.4.1
@@ -177,26 +97,7 @@ importers:
         specifier: ^5.2.2
         version: 5.3.3
 
-  packages/common:
-    dependencies:
-      zod:
-        specifier: ^3.22.4
-        version: 3.22.4
-    devDependencies:
-      '@types/node':
-        specifier: ^20.11.9
-        version: 20.11.9
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
-      vite:
-        specifier: ^5.0.8
-        version: 5.0.12(@types/node@20.11.9)
-      vite-plugin-dts:
-        specifier: ^3.7.2
-        version: 3.7.2(@types/node@20.11.9)(typescript@5.3.3)(vite@5.0.12)
-
-  packages/frontend:
+  apps/frontend:
     dependencies:
       '@clerk/clerk-react':
         specifier: ^4.30.3
@@ -233,7 +134,7 @@ importers:
         version: 2.1.0
       common:
         specifier: workspace:*
-        version: link:../common
+        version: link:../../packages/common
       postcss:
         specifier: ^8.4.33
         version: 8.4.33
@@ -292,6 +193,25 @@ importers:
       vite:
         specifier: ^5.0.8
         version: 5.0.12(@types/node@20.11.9)
+
+  packages/common:
+    dependencies:
+      zod:
+        specifier: ^3.22.4
+        version: 3.22.4
+    devDependencies:
+      '@types/node':
+        specifier: ^20.11.9
+        version: 20.11.9
+      typescript:
+        specifier: ^5.2.2
+        version: 5.3.3
+      vite:
+        specifier: ^5.0.8
+        version: 5.0.12(@types/node@20.11.9)
+      vite-plugin-dts:
+        specifier: ^3.7.2
+        version: 3.7.2(@types/node@20.11.9)(typescript@5.3.3)(vite@5.0.12)
 
 packages:
 
