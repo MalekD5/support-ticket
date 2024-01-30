@@ -1,0 +1,16 @@
+{
+      "parserOptions": {
+            "project": "./tsconfig.json"
+      },
+      "rules": {
+            "prettier/prettier": [
+                  "error",
+                  {
+                        "endOfLine": "auto",
+                        "tabWidth": 2,
+                        "useTab": false,
+                        "singleQuotes": true
+                  }
+            ]
+      }
+}
