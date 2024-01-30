@@ -12,7 +12,7 @@ This is a monorepo using pnpm workspaces, it includes the following packages:
 
 ## Building and compiling
 
-This project requires Node `18+` and pnpm `8+`
+This project requires Node `16+` and pnpm `8+`
 
 clone this repository then:
 1. run 
